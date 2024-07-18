@@ -14,7 +14,7 @@ interface JobDetailsProps {
 export function JobDetails({ job: { title, department, description, requirements, roadmap } }: JobDetailsProps) {
   return (
     <div className="mb-6">
-      <div id="header" className="flex h-60 w-full overflow-hidden pl-12">
+      <div id="header" className="flex w-full overflow-hidden pl-12 xl:h-64">
         <div className="z-10 w-72 py-16 pr-4">
           <Link href="/" className="mb-4 block text-primary-500 hover:underline">
             &larr; Back to all jobs
