@@ -14,7 +14,7 @@ interface JobDetailsProps {
 export function JobDetails({ job: { title, department, description, requirements, roadmap } }: JobDetailsProps) {
   return (
     <div className="mb-6">
-      <div id="header" className="flex w-full overflow-hidden pl-12 xl:h-64">
+      <div id="header" className="flex h-56 w-full overflow-hidden pl-12 xl:h-64">
         <div className="z-10 w-72 py-16 pr-4">
           <Link href="/" className="mb-4 block text-primary-500 hover:underline">
             &larr; Back to all jobs
@@ -24,9 +24,9 @@ export function JobDetails({ job: { title, department, description, requirements
           </Heading>
           <p className="mb-6 text-xl text-gray-700">{department}</p>
         </div>
-        <div className="relative grow">
-          <div className="absolute inset-0">
-            <Image src="/images/join-us.svg" alt="Join Us" fill style={{ objectFit: "cover", objectPosition: "top" }} />
+        <div className="relative flex grow">
+          <div className="absolute inset-0  hidden sm:block">
+            <Image src="/images/join-us.svg" alt="Join Us" className="xs:hidden object-cover" fill />
           </div>
           <div className="absolute right-0 top-0 z-10 -translate-y-1/2">
             <ApplyNowButton showHand />
@@ -66,9 +66,11 @@ const ApplyNowButton = ({ showHand = false }: ApplyNowButtonProps) => {
     <Link href="mailto:jobs@pathlynx.ai" className="relative inline-block">
       <span
         className={clsx(
-          "inline-flex items-center rounded-full bg-primary-500 px-10 py-2 text-white",
+          "inline-flex items-center rounded-full",
+          "whitespace-nowrap bg-primary-500 px-10 py-2 text-white",
           "transition-colors hover:bg-primary-600",
           "relative z-10",
+
           showHand && "right-32 top-44"
         )}
       >

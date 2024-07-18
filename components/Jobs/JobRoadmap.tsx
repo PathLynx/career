@@ -12,7 +12,12 @@ export function JobRoadmap({ roadmap }: JobRoadmapProps) {
       <Heading as="h2" className="mb-4">
         Path Map
       </Heading>
-      <iframe title="Job Roadmap" src={roadmap} allowFullScreen className={clsx(styles.roadmapIframe)}></iframe>
+      <iframe
+        title="Job Roadmap"
+        src={roadmap}
+        allowFullScreen
+        className={clsx(styles.roadmapIframe, "h-96 w-full")}
+      ></iframe>
     </div>
   )
 }
