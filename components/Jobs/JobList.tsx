@@ -1,11 +1,6 @@
 // components/Jobs/JobList.tsx
-import { JobCard } from './JobCard'
-
-interface Job {
-  slug: string
-  title: string
-  department: string
-}
+import { Job } from "types"
+import { JobCard } from "./JobCard"
 
 interface JobListProps {
   jobs: Job[]
@@ -13,10 +8,10 @@ interface JobListProps {
 
 export function JobList({ jobs }: JobListProps) {
   return (
-    <ul className="space-y-4">
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
       {jobs.map((job) => (
-        <JobCard key={job.slug} {...job} />
+        <JobCard key={job.slug} job={job} />
       ))}
-    </ul>
+    </div>
   )
 }
