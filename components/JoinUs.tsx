@@ -20,11 +20,7 @@ export function JoinUs() {
               <Button href="#job-listings" className="mb-4 sm:mb-0">
                 View Openings
               </Button>
-              <Button
-                href="https://www.crunchbase.com/organization/pathlynx"
-                intent="secondary"
-                rel="noopener noreferrer"
-              >
+              <Button href="https://www.crunchbase.com/organization/pathlynx" intent="secondary">
                 About Us
               </Button>
             </div>
