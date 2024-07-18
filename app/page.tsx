@@ -23,9 +23,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
+    <div className="mx-auto w-4/5 py-12">
       <JoinUs />
       <CurrentOpenings jobs={JOBS} />
-    </>
+    </div>
   )
 }

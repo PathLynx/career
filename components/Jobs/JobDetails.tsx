@@ -15,7 +15,7 @@ export function JobDetails({ job: { title, department, description, requirements
   return (
     <div className="mb-6">
       <div id="header" className="flex h-60 w-full overflow-hidden pl-12">
-        <div className="z-10 w-96 py-8 pr-4">
+        <div className="z-10 w-72 py-16 pr-4">
           <Link href="/" className="mb-4 block text-primary-500 hover:underline">
             &larr; Back to all jobs
           </Link>
