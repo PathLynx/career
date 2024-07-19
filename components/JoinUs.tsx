@@ -27,7 +27,7 @@ export function JoinUs() {
           </div>
           <div className="order-1 sm:order-2 lg:col-span-2">
             <Image
-              src="/images/join.png"
+              src="/images/join.svg"
               alt="Join our team"
               width={500}
               height={500}

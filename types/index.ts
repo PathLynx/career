@@ -6,6 +6,8 @@ export interface Job {
   department: string
   description?: string
   location: string
-  requirements: string[]
+  responsibilities: string[]
+  qualifications: string[]
+  extras?: string[]
   roadmap?: string
 }
