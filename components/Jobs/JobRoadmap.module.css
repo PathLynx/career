@@ -21,3 +21,6 @@
 .roadmapIframe::-webkit-scrollbar-thumb:hover {
   background-color: var(--primary-400);
 }
+.roadmapIframe a {
+  display: none !important;
+}
