@@ -77,6 +77,6 @@ export const JOBS: Job[] = [
       "等相关海外或者AI项目开发经验者优先",
       "在开源社区活跃,有代码贡献或技术文章发表或有基于开源项目进行二次开发的经验",
     ],
-    roadmap: "https://roadmap.sh/r/java-4l5sb",
+    roadmap: "https://roadmap.sh/r/embed?id=669631052b17b182cb0326e3",
   },
 ]
